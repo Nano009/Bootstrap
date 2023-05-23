@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel/Slideshow</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+
+        <!-- The slideshow/carousel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="taj_mahal.png" alt="India" class="d-block w-100" height="800">
+                <div class="carousel-caption">
+                    <h3>India</h3>
+                    <p>Awsome street foods!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="great_wall.png" alt="China" class="d-block w-100" height="800">
+                <div class="carousel-caption">
+                    <h3>China</h3>
+                    <p>The great traditional cultures!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="easter_island.png" alt="Easter Island" class="d-block w-100" height="800">
+                <div class="carousel-caption">
+                    <h3>Easter Island</h3>
+                    <p>The statues are creepy!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="island.png" alt="Island" class="d-block w-100" height="800">
+                <div class="carousel-caption">
+                    <h3>Island</h3>
+                    <p>We just visited there!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="statue_of_liberty.png" alt="Statue" class="d-block w-100" height="800">
+                <div class="carousel-caption">
+                    <h3>America</h3>
+                    <p>Goodbye America!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</body>
+</html>

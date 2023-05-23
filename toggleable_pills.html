@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggleable Pills</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1>Toggleable Pills</h1>
+        <br>
+        <!-- Nav Pills -->
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+            </li>
+        </ul>
+        <!-- Tab Panes -->
+        <div class="tab-content">
+            <div id="home" class="container mt-3 tab-pane active">
+                <h1>HOME</h1>
+                <p>This is the Home Tab-pane of the Web Site.</p>
+            </div>
+            <div id="menu1" class="container mt-3 tab-pane fade">
+                <h1>Menu 1</h1>
+                <p>This is the Menu 1 Tab-pane of the Web Site.</p>
+            </div>
+            <div id="menu2" class="container mt-3 tab-pane fade">
+                <h1>Menu 2</h1>
+                <p>This is the Menu 2 Tab-pane of the Web Site.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
