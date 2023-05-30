@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Excercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style type="text/css">
+        .nbar{
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+        .card{
+            border-radius: 20px;
+        }
+        h3{
+            border-bottom: 1px solid white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .none{
+            text-decoration: none;
+        }
+        br {
+            margin: 2em;
+            display: block;
+            font-size: 24%;
+        }
+        .icons{
+            font-size: 25px;
+            transition-duration: .3s;
+			transition-timing-function: ease-in-out;
+        }
+        .facebook:hover{
+            color: #3b5998;
+        }
+        .twitter:hover{
+            color: #00ACEE;
+        }
+        .youtube:hover{
+            color: #c4302b;
+        }
+        .linkedin:hover{
+            color: #0072b1;
+        }
+		.icons:hover{
+			transform: rotate(360deg);
+		}
+    </style>
+</head>
+<body style="background-color: rgb(9, 71, 34);">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md" style="background-color: rgb(9, 71, 34);">
+        <div class="container nbar">
+            <a class="navbar-brand me-5 logo" href="#">
+                <img src="exlogo.jpg" alt="Logo" width="50px" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="CollapsibleNavbar">
+                <ul class="navbar-nav col-8 col-lg-9 col-xl-10">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown">Exercises</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Exercise 1</a></li>
+                            <li><a href="#" class="dropdown-item">Exercise 2</a></li>
+                            <li><a href="#" class="dropdown-item">Exercise 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav col-4 col-lg-3 col-xl-2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar -->
+    <!-- The slideshow/carousel-->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="container mt-3">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ex1.jpg" alt="India" class="d-block w-100" height="600">
+                </div>
+                <div class="carousel-item">
+                    <img src="ex2.jpg" alt="China" class="d-block w-100" height="600">
+                </div>
+                <div class="carousel-item">
+                    <img src="ex3.jpg" alt="Easter Island" class="d-block w-100" height="600">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The slideshow/carousel-->
+    <!-- Cards-->
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <div class="card px-3">
+                    <div class="card-body text-success">
+                        <h2 class="card-title"><b>SwitzarLand</b></h2>
+                        <p class="card-text py-3" style="text-indent: 50px;">Swizerland, offically Swiss Confederation, Country, central Europe, Area: 15,943 sq mi (41,191 sq km). Population: (2023 est.) 8,864,000. Capitals Bern (administrative), Lausanne (judicial).</p>
+                        <a href="#">
+                            <button class="btn btn-outline-success float-end">Read more ...</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-sm-8">
+                <div class="card px-3">
+                    <div class="card-body text-success">
+                        <h2 class="card-title"><b>Population</b></h2>
+                        <p class="card-text py-3" style="text-indent: 50px;">The population is German, French, and Italian. Languages: German, French, Italian, Romanish (all official, with Romanish used locally). Religions: Christianity (Roman Catholic, Protestant); also Islam. Currency: Swiss franc. Switzerland is divided into three regions: the meadow-covered Jura Mountains; the central Mittelland, a rich agricultural and urbanized area; and the lofy crags of the Alps.</p>
+                        <a href="#">
+                            <button class="btn btn-outline-success float-end">Read more ...</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-sm-8">
+                <div class="card px-3">
+                    <div class="card-body text-success">
+                        <h2 class="card-title"><b>Economy</b></h2>
+                        <p class="card-text py-3" style="text-indent: 50px;">It is one of the world's major financial centres: its economy is based largely on international trade and banking, as well as light and heavy industries. Manufactures include watches, precision instruments, machinery, and chemicals. Tourism and agriculture are also important; products include grains, sugar beets, fruits and vegetables, dairy products, chocolate, and wine.</p>
+                        <a href="#">
+                            <button class="btn btn-outline-success float-end">Read more ...</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cards-->
+    <!-- Footer-->
+    <div class="container mt-5">
+        <h3 class="text-white">Exercises</h3>
+        <div class="border-bottom pb-3">
+            <div class="row">
+                <div class="col-md-7" style="padding-left: 30px;">
+                    <h5 class="text-white">Subscribe to get tips and updates</h5>
+                    <br>
+                    <div class="col">
+                        <form>
+                            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-7 col-7">
+                                <div class="input-group mb-2">
+                                    <input type="text" class="form-control border-success" id="inlineFormInputGroup" placeholder="Email address" style="border: 3px solid green; border-radius: 5px;">
+
+                                    <div type="button" class="btn input-group-text btn-success text-white border-success" style="border: 3px solid green;">Subscribe</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-sm-2" style="padding-left: 30px;">
+                    <a href="#" class="text-white none">Home</a>
+                    <br>
+                    <a href="#" class="text-white none">About</a>
+                    <br>
+                    <a href="#" class="text-white none">Contact</a>
+                    <br>
+                    <a href="#" class="text-white none">Sources</a>
+                    <br>
+                </div>
+                <div class="col-sm-3" style="padding-left: 30px;">
+                    <a href="#" class="text-white none">Exercise 1</a>
+                    <br>
+                    <a href="#" class="text-white none">Exercise 2</a>
+                    <br>
+                    <a href="#" class="text-white none">Exercise 3</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6 col-sm-7"></div>
+                <div class="col-6 col-sm-5" style="padding-left: 30px;">
+                    <a href="https://www.facebook.com/" class="text-light"><i class="fa-brands fa-facebook icons facebook"></i></a>
+                    <a href="https://www.twitter.com/" class="text-light"><i class="fa-brands fa-twitter icons twitter" style="padding-left: 20px;"></i></a>
+                    <a href="https://www.youtube.com/" class="text-light"><i class="fa-brands fa-youtube icons youtube" style="padding-left: 20px;"></i></a>
+                    <a href="https://www.linkedin.com/" class="text-light"><i class="fa-brands fa-linkedin icons linkedin" style="padding-left: 20px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-3 text-white" style="font-size: 12px;"><i class="far fa-copyright"></i> Copyright 2023. All rights reserved. Developed by Helio.</p>
+    </div>
+    <!-- Footer-->
+</body>
+</html>
