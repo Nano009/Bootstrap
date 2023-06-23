@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="cf.jpg">
+    <style>
+        :root {
+            --seagreen:rgb(35, 128, 75);
+            --darkgreen: rgb(51, 160, 138);
+        }
+        .nbar{
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+        .navtext{
+            color: white;
+        }
+        .navtext:hover{
+            color: var(--seagreen);
+        }
+        .home_text{
+            color: var(--seagreen);
+        }
+        .colorful_flowers{
+                margin-left: 200px;
+                margin-right: 200px;
+                line-height: 2;
+        }
+        .color_therapy{
+            margin-left: 280px;
+            margin-right: 280px;
+            line-height: 2;
+        }
+        .color_cards{
+            line-height: 2;
+            text-align: center;
+        }
+        .card-body-text{
+            height: 290px;
+        }
+        .color_cards_text{
+            text-indent: 50px;
+            text-align: left;
+        }
+        .rgb_text{
+            text-align: center;
+        }
+        .learn_more-btn:hover {
+            background-color: rgb(16, 62, 16);
+            border: white;
+        }
+        .two_cards{
+            line-height: 2;
+            border-radius: 10px;
+            border: none;
+        }
+        .none{
+            text-decoration: none;
+        }
+        .brs {
+            margin: 2em;
+            display: block;
+            font-size: 24%;
+        }
+        .icons{
+            font-size: 25px;
+            transition-duration: .3s;
+			transition-timing-function: ease-in-out;
+        }
+        .icons:hover{
+			transform: rotate(360deg);
+            color: var(--seagreen);
+		}
+        .subscribe{
+            border: 3px solid rgb(22, 73, 22); 
+            background-color: rgb(22, 73, 22); 
+            height: 58px;
+            width: 100px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .em{
+            border: 3px solid rgb(22, 73, 22); 
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        @media screen and (max-width: 1100px) {
+            .red_button{
+                margin-top: 32px;
+            }
+        }
+        @media screen and (max-width: 1075px) {
+            .color_therapy{
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+        }
+        @media screen and (max-width: 990px) {
+            .cards{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        @media screen and (max-width: 780px) {
+            .colorful_flowers{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .color_therapy{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+        @media screen and (max-width: 770px) {
+            .green_button{
+                margin-top: 64px;
+            }
+        }
+        @media screen and (max-width: 766px) {
+            .cimg{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 525px) {
+            .rgb_text{
+                font-size: 12.5px;
+                text-align: left;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <!--First Section-->
+    <div style="background-image: url(ct.jpg);">
+        <div class="container">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-md" style="background-color: var(--green);">
+            <div class="container nbar">
+                <a class="navbar-brand me-5 logo" href="#">
+                    <img src="ctg.jpg" alt="Logo" width="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="CollapsibleNavbar">
+                    <ul class="navbar-nav col-8 col-lg-9 col-xl-10">
+                        <li class="nav-item">
+                            <a class="nav-link home_text" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle navtext" role="button" data-bs-toggle="dropdown">Exercises</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Exercise 1</a></li>
+                                <li><a href="#" class="dropdown-item">Exercise 2</a></li>
+                                <li><a href="#" class="dropdown-item">Exercise 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navtext" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navtext" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav col-4 col-lg-3 col-xl-2">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link navtext" target="_blank">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link navtext" target="_blank">Log In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+            <!-- Nav Bar -->
+            <!-- Main Photo -->
+            <div class="mt-5" style="text-align: center;">
+                <img src="ctg-removebg.png" alt="Color Therapy" class="img-fluid" width="900">
+            </div>
+            <!-- Main Photo -->
+        </div>
+    </div>
+    <!--Second Section-->
+    <div style="background-color: rgb(64, 185, 117);">
+        <div class="colorful_flowers">
+            <h1 class="text-white text-center pt-5"><b>Colorful Flowers</b></h1>
+            <p class="text-center pt-3" style="color: rgb(240, 205, 6);"><b>Flowers, whether in a bouquet or growing in a pot or flower bed, always have a special way of lifting our spirits. This is due in part to the principles of color therapy, an alternative therapy grounded in the idea that colors have powerful effects on our moods. You can combine the wellness benefits of gardening, with some color therapy, to get the best of both worlds! Add a few of these colorful flowers to your Des Moines garden to make you, and your neighbors, smile.</b></p>
+            <p class="pt-4 text-center text-white">According to the principles of color therapy, certain colors tend to specific emotional responses in people. Blues are calming, greens are tranquil and grounding, yellows are cheerful, red is passionate and romantic, pink promotes kindness and gentleness, and purple inspires creativity and mystery.</p>
+        </div>
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-5 text-white rgb_text">#FCF1EE / rgb(223, 109, 79)</div>
+                <div class="col-7">
+                    <div class="progress rounded-pill" style="height: 20px;">
+                        <div class="progress-bar" style="width: 73%; background-color: rgb(223, 109, 79);">73%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-5 text-white rgb_text">#E2F7FB / rgb(114, 198, 215)</div>
+                <div class="col-7">
+                    <div class="progress rounded-pill" style="height: 20px;">
+                        <div class="progress-bar" style="width: 31%; background-color: rgb(114, 198, 215);">31%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-5 text-white rgb_text">#E4E6FE / rgb(85, 90, 230)</div>
+                <div class="col-7">
+                    <div class="progress rounded-pill" style="height: 20px;">
+                        <div class="progress-bar" style="width: 50%; background-color: rgb(85, 90, 230);">50%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-5 text-white rgb_text">#FBF3D4 / rgb(237, 207, 99)</div>
+                <div class="col-7">
+                    <div class="progress rounded-pill" style="height: 20px;">
+                        <div class="progress-bar" style="width: 80%; background-color: rgb(237, 207, 99);">80%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-5 text-white rgb_text">#F5FBDE / rgb(190, 216, 85)</div>
+                <div class="col-7">
+                    <div class="progress rounded-pill" style="height: 20px;">
+                        <div class="progress-bar" style="width: 76%; background-color: rgb(190, 216, 85);">76%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="text-align: center;">
+                    <a href="#"><button class="btn btn-light text-success m-5 learn_more-btn">Learn more</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Third Section-->
+    <div style="background-color: rgb(254, 250, 246);">
+        <div class="color_therapy">
+            <h1 class="pt-5" style="text-align: center;"><b><span class="text-danger">What </span><span class="text-success">Is Color </span><span class="text-primary">Therapy?</span></b></h1>
+            <p class="text-center pt-3">Color therapy, also known as chromotherapy, is a form of therapy that uses color and light to treat certain mental and physical health conditions. We can trace this form of therapy back to the ancient Egyptians. They made use of sun-filled rooms with colored glasses for therapeutic purposes.</p>
+            <p class="text-center pt-3">In color therapy, different colors are thought to be able to treat various conditions. Color therapists believe that a lack of a particular color in your body might be responsible for your living condition.</p>
+        </div>
+        <div class="container mt-5" style="border-left: 3px solid var(--seagreen); color: rgb(147, 120, 84);">
+            <p>Blues are calming, greens are tranquil and grounding, yellows are cheerful, red is passionate and romantic, pink promotes kindness and gentleness, and purple inspires creativity and mystery.</p>
+        </div>
+        <div class="container">
+            <div class="row pb-5 justify-content-center">
+                <div class="col-10 col-sm-6 col-lg-4 mt-5">
+                    <div class="card color_cards">
+                        <div class="card-body">
+                            <div>
+                                <h2 class="card-title" style="color: red;">#RED COLOR</h2>
+                                <p class="card-text p-3 color_cards_text">Red is used to energize or invigorate a person who might be feeling <span style="color: red;"><b>tired or down.</b></span> However, red may also trigger people who might already be tense, which is why it’s used carefully in color therapy.</p>
+                            </div>
+                            <a href="#"><button class="btn btn-outline-danger color_cards_btn red_button">Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mt-5">
+                    <div class="card color_cards">
+                        <div class="card-body">
+                            <div>
+                                <h2 class="card-title" style="color: green;">#GREEN COLOR</h2>
+                                <p class="card-text p-3 color_cards_text">Green is the color of nature, and according to chromatherapists, it can help   <span style="color: green;"><b>relieve stress and relax</b></span> a person.</p>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="#"><button class="btn btn-outline-success color_cards_btn green_button ">Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-4 mt-5 cards">
+                    <div class="card color_cards">
+                        <div class="card-body">
+                            <div>
+                                <h2 class="card-title" style="color: blue;">#BLUE COLOR</h2>
+                                <p class="card-text p-3 color_cards_text">Blue: Chromatherapists use blue to treat depression and pain. Darker shades of blue are also thought to have sedative properties and may be helpful for people who experience <span style="color: blue;"><b>insomnia or other sleeping disorders.</b></span></p>
+                            </div>
+                            <a href="#"><button class="btn btn-outline-primary color_cards_btn">Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Forth Section-->
+    <div style="background-color: rgb(64, 185, 117);">
+        <div class="container pt-5">
+            <h1 class="text-white text-center"><b>Colors Information</b></h1>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="card two_cards mt-5" style="background-color: var(--darkgreen);">
+                        <div class="card-body p-4">
+                            <h2 class="card-title" style="color: yellow;"><b>Yellow Color</b></h2>
+                            <p class="card-text py-3" style="text-indent: 50px;">Yellow can be used to improve your mood and make you happy and optimistic. Yellow can be used to improve your mood and make you <span style="color: yellow;"><b>happy and optimistic.</b></span> Yellow can be used to improve your mood and make you happy and optimistic.</p>
+                            <a href="#">
+                                <button class="btn btn-outline-warning float-end">Read more ...</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="card two_cards my-5" style="background-color: var(--darkgreen);">
+                        <div class="card-body p-4">
+                            <h2 class="card-title" style="color: lightgrey;"><b>Grey Color</b></h2>
+                            <p class="card-text py-3" style="text-indent: 50px;">Grey is a way of being able to be impartial to their <span style="color: lightgrey;"><b>emotional ups and downs and be quite conventional and dependable and stable</b></span> for people.</p>
+                            <a href="#">
+                                <button class="btn btn-outline-light float-end">Read more ...</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fifth Section-->
+    <div style="background-color: rgb(254, 250, 246);">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-7">
+                    <h2><b><span style="color: lightgreen;">Learn about our </span><span style="color: rgb(171, 74, 74);">developers, </span><span style="color: lightsteelblue;">aim, </span><span class="text-dark">& </span><span class="text-warning">thought process </span><span style="color: lightgreen;">while developing </span><span style="color: darkgreen;">ColorTherapy. </span></b></h2>
+                    <p style="text-indent: 50px;" class="pt-3">Frequently Asked Questions have answers for questions users are wondering about the most</p>
+                </div>
+                <div class="col-0 col-md-5">
+                    <img src="ctg-removebg.png" alt="Color Therapy" class="img-fluid cimg">
+                </div>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col-2">
+                    <a href="#"><button class="btn text-success"><span class="me-2">Read </span><i class="bi bi-box-arrow-in-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                      </svg></i></button></a>
+                    <a href="#" class="text-success"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sixth Section-->
+    <div style="background-color: rgb(64, 185, 117);">
+        <div class="container pt-4">
+            <div class="border-bottom pb-3">
+                <h2 style="color: darkgreen;">ColorTherapy</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7" style="padding-left: 30px;">
+                    <h5 class="text-white">Subscribe to get tips and updates</h5>
+                    <br>
+                    <form>
+                        <div class="container">
+                            <div class="row align-items-center justify-content-start">
+                                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-8 col-9 p-0">
+                                    <div class="form-floating my-3">
+                                        <input type="email" name="mail" id="em" placeholder="Email address" class="form-control em">
+                                        <label for="em" class="form-label">Email address</label>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-0">
+                                    <button type="submit" class="text-white subscribe">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-sm-2" style="padding-left: 30px;">
+                    <a href="#" class="text-white none">Home</a>
+                    <br class="brs">
+                    <a href="#" class="text-white none">About</a>
+                    <br class="brs">
+                    <a href="#" class="text-white none">Contact</a>
+                    <br class="brs">
+                    <a href="https://edusn-my.sharepoint.com/:w:/g/personal/nanocho_edusnschool_co_uk/EemHc10qGNxFubwxjHULGLgBi1KtoseASGH0Y44RrTPTJQ?e=2chbBu" class="text-white none" target="_blank">Sources</a>
+                    <br class="brs">
+                </div>
+                <div class="col-sm-3 col-md-2" style="padding-left: 30px;">
+                    <a href="#" class="text-white none">Exercise 1</a>
+                    <br class="brs">
+                    <a href="#" class="text-white none">Exercise 2</a>
+                    <br class="brs">
+                    <a href="#" class="text-white none">Exercise 3</a>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-7"></div>
+                <div class="col-6 col-sm-5" style="padding-left: 30px;">
+                    <a target="_blank" href="https://www.facebook.com/" class="text-light"><i class="fa-brands fa-facebook icons facebook"></i></a>
+                    <a target="_blank" href="https://www.twitter.com/" class="text-light"><i class="fa-brands fa-twitter icons twitter" style="padding-left: 20px;"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/" class="text-light"><i class="fa-brands fa-youtube icons youtube" style="padding-left: 20px;"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/" class="text-light"><i class="fa-brands fa-linkedin icons linkedin" style="padding-left: 20px;"></i></a>
+                </div>
+            </div>
+            <div class="row border-top">
+                <div class="col">
+                    <p class="text-center mt-3 text-white" style="font-size: 12px;"><i class="far fa-copyright"></i> Copyright 2023. All rights reserved. Developed by Helio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
